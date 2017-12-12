@@ -1,47 +1,44 @@
-.column-left {
+.wrapper {
+  width: 1000px;
+  /*usually want a precise value^*/
+  margin: 0 auto;
+  /*auto on left and right - let browser determine how to get box in center of screen.  0 for top and bottom*/
+  background-color: lightgrey;
+}
+
+.left-column {
   float: left;
-  width: 25%;
+  width: 50%;
+  padding: 30px;
+  background-color: lightblue;
+  box-sizing: border-box;
+}
+
+.right-column {
+  float: left;
+  width: 50%;
+  padding: 30px;
+  background-color: lightgreen;
+  box-sizing: border-box;
+}
+
+.footer {
+  width: 100%;
+  background-color: hotpink;
+  clear: both;
+}
+
+form {
+  width: 100%;
   padding: 15px;
+  background-color: lightgrey;
   box-sizing: border-box;
 }
 
-.column-right {
-  float: left;
-  width: 75%;
-  padding: 15px;
+input[type="email"], input[type="password"] {
+  width: 100%;
   box-sizing: border-box;
-}
-
-.tile {
-  float: left;
-  width: 25%;
-  height: 200px;
-  border: 5px solid white;
-  background-image: url("https://wallpaperbrowse.com/media/images/704532.jpg");
-  background-size: cover;
-  box-sizing: border-box;
-}
-
-.tile-1:hover {
-  background-image: url("http://cdn1-www.dogtime.com/assets/uploads/gallery/samoyed-dogs-and-puppies/samoyed-dogs-puppies-1.jpg");
-}
-
-.tile-2:hover {
-  background-image: url("https://i.imgur.com/ptDghLs.jpg");
-}
-
-.tile-3:hover {
-  background-image: url("https://www.nylabone.com/-/media/images/nylabone-na/us/dog101/breeds-a-z/samoyed-jpg.jpg");
-}
-
-.tile-4:hover {
-  background-image: url("https://www.arcticrescue.org.au/sites/default/files/styles/article_page_620x349/public/images/page/samoyed-breed-image.jpg?itok=mqP90W0r");
-}
-
-.tile-5:hover {
-  background-image: url("http://www.mydogweb.com.au/samoyed/images/extra_547.jpg");
-}
-
-.tile-6:hover {
-  background-image: url("http://cdn0.wideopenpets.com/wp-content/uploads/2016/07/12742338_10207661066317197_5545245606530787319_n.jpg");
+  /*test what happens when remove border-box*/
+  /*by making the inputs 100% width, they each fill 100% width of the container.
+  hence, email and password on separate lines*/
 }
