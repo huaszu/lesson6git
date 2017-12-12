@@ -3,14 +3,14 @@
   /*usually want a precise value^*/
   margin: 0 auto;
   /*auto on left and right - let browser determine how to get box in center of screen.  0 for top and bottom*/
-  background-color: lightgrey;
+  /*background-color: lightgrey;*/
 }
 
 .left-column {
   float: left;
   width: 50%;
   padding: 30px;
-  background-color: lightblue;
+  /*background-color: lightblue;*/
   box-sizing: border-box;
 }
 
@@ -18,7 +18,7 @@
   float: left;
   width: 50%;
   padding: 30px;
-  background-color: lightgreen;
+  /*background-color: lightgreen;*/
   box-sizing: border-box;
 }
 
@@ -26,7 +26,14 @@
   width: 100%;
   background-color: hotpink;
   clear: both;
+  /*clear: both told footer to ignore the floating left and right column so the footer does not intercept the above with weird formatting*/
 }
+
+/*.footer2 {
+  width: 100%;
+  background-color: hotpink;
+noticed that clear:both not needed here!
+}*/
 
 form {
   width: 100%;
